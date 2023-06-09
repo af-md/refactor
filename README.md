@@ -1,5 +1,8 @@
 # basic coding standards
 
+## function 
+
+### function naming
 
 function functionToCalculateTheSquareRootOfAGivenNumberAndReturnTheResult(number) {
     // Function logic to calculate the square root of the number
@@ -14,3 +17,4 @@ function aFunctionThatReadsAFileAndReturnsAnArrayOfLinesFromTheFileBasedOnThePro
 function getPrimeNumbers(limit) {
     // Function logic to generate an array of prime numbers up to the given limit
 }
+
