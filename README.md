@@ -1,8 +1,57 @@
-# basic coding standards
+# basic coding standards - examples in simple javascript
 
 
-## variable naming
+# variable naming
 
+## clear readability
+
+    // Bad Variable Names
+    let a = 10;
+    let b = "John";
+    let c = true;
+
+    //Good Variable Names
+    let numberOfStudents = 25;
+    let customerName = "John Doe";
+    let isLoggedIn = true;
+ 
+ ## readible, clear, but also precise
+    
+    var xCoord1 = 5;
+    var yCoord1 = 10;
+
+    var xCoordinate = 5;
+    var yCoordinate = 10;
+
+    var numStudents = 25;
+    var studentsArray = ['John', 'Jane', 'Mike'];
+
+    var studentCount = 25;
+    var studentNames = ['John', 'Jane', 'Mike'];
+
+
+    var userInputStr = 'Hello';
+    var userInputNum = 42;
+
+    var userInputString = 'Hello';
+    var userInputNumber = 42;
+
+## now do some yourself
+
+    // Bad Example
+    let a = 100; // Player's health points
+    let b = 50; // Player's maximum health points
+    let c = 20; // Player's current health level
+
+    // Bad Example
+    let x = 0; // Current player score
+    let y = 100; // Maximum achievable score
+    let z = 10; // Number of points earned in the current level
+
+    // Bad Example
+    let p = true; // Setting indicating if sound is enabled
+    let q = 3; // Difficulty level (1 - Easy, 2 - Medium, 3 - Hard)
+    let r = 60; // Time limit in seconds
 
 
 ## function naming
@@ -20,6 +69,43 @@
     function getPrimeNumbers(limit) {
         // Function logic to generate an array of prime numbers up to the given limit
     }
+    
+ ## function parameters
+ 
+     function calculateArea(b, h) {
+      // Bad Example
+      let result = 0.5 * b * h;
+      return result;
+    }
+
+    function calculateArea(base, height) {
+      // Good Example
+      let area = 0.5 * base * height;
+      return area;
+    }
+
+    function greet(n) {
+      // Bad Example
+      return "Hello, " + n + "!";
+    }
+
+    function greet(name) {
+      // Good Example
+      return "Hello, " + name + "!";
+    }
+
+    function calculateSum(n1, n2, n3) {
+      // Bad Example
+      let sum = n1 + n2 + n3;
+      return sum;
+    }
+
+    function calculateSum(number1, number2, number3) {
+      // Good Example
+      let sum = number1 + number2 + number3;
+      return sum;
+    }
+
 
 ## if statements
 
