@@ -118,6 +118,25 @@
       console.log(formattedMessage);
     }
 
+## naming confusion. is there anything that confused you in this function?
+    function printNames(name1) {
+      const name2 = "John";
+
+      console.log(name1);
+
+      if (name2 === "John") {
+        const name3 = "Bob";
+        console.log(name2);
+        console.log(name3); 
+      }
+
+      console.log(name3);
+    }
+
+    // Example usage
+    const name1 = "Alice";
+    printNames(name1);
+    console.log(name2);
 
 
 ## function naming
