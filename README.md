@@ -53,28 +53,7 @@
     let q = 3; // Difficulty level (1 - Easy, 2 - Medium, 3 - Hard)
     let r = 60; // Time limit in seconds
 
-## unused variables
-    // Bad Example (10 lines long)
-    function calculateArea(length, width) {
-      const area = length * width;
-      const perimeter = 2 * (length + width);
-      const volume = length * width * height; // Unused variable
-      const diagonal = Math.sqrt(length ** 2 + width ** 2); // Unused variable
-      const height = 5; // Unused variable
-
-      console.log(`Area: ${area}`);
-      console.log(`Perimeter: ${perimeter}`);
-    }
-
-    // Good Example (unused variables removed)
-    function calculateArea(length, width) {
-      const area = length * width;
-      const perimeter = 2 * (length + width);
-
-      console.log(`Area: ${area}`);
-      console.log(`Perimeter: ${perimeter}`);
-    }
-    
+## unused variables    
     // Example 1: Bad - Unused Variables
 
     function calculateArea(width, height) {
@@ -129,6 +108,15 @@
     const y = 20;
 
     console.log(x + y);
+
+## spot unused variables
+
+    function printMessage(message) {
+      const welcomeMessage = "Welcome!";
+      const formattedMessage = `${welcomeMessage} ${message}`;
+      const date = new Date();
+      console.log(formattedMessage);
+    }
 
 
 
