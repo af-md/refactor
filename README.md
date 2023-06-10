@@ -1,7 +1,7 @@
 # basic coding standards - examples in simple javascript
 
 
-# variable naming
+# variables
 
 ## clear readability
 
@@ -52,6 +52,28 @@
     let p = true; // Setting indicating if sound is enabled
     let q = 3; // Difficulty level (1 - Easy, 2 - Medium, 3 - Hard)
     let r = 60; // Time limit in seconds
+
+## unused variables
+    // Bad Example (10 lines long)
+    function calculateArea(length, width) {
+      const area = length * width;
+      const perimeter = 2 * (length + width);
+      const volume = length * width * height; // Unused variable
+      const diagonal = Math.sqrt(length ** 2 + width ** 2); // Unused variable
+      const height = 5; // Unused variable
+
+      console.log(`Area: ${area}`);
+      console.log(`Perimeter: ${perimeter}`);
+    }
+
+    // Good Example (unused variables removed)
+    function calculateArea(length, width) {
+      const area = length * width;
+      const perimeter = 2 * (length + width);
+
+      console.log(`Area: ${area}`);
+      console.log(`Perimeter: ${perimeter}`);
+    }
 
 
 ## function naming
