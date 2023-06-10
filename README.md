@@ -106,6 +106,43 @@
       return sum;
     }
 
+## function parameter naming homework (just think of good names, you don't have to implement the function 🙂)
+
+    // Function 1: Attack Enemy
+
+    // Parameters:
+    // x: Enemy's health points
+    // y: Player's attack power
+    // z: Player's critical strike chance
+
+    function attackEnemy(x, y, z) {
+      // Perform an attack on the enemy using the provided parameters
+    }
+
+
+    // Function 2: Collect Power-Up
+
+    // Parameters:
+    // a: Power-up type
+    // b: Player's current health
+    // c: Player's maximum health
+
+    function collectPowerUp(a, b, c) {
+      // Perform actions related to collecting a power-up using the provided parameters
+    }
+
+
+    // Function 3: Increase Score
+
+    // Parameters:
+    // p: Current score
+    // q: Points earned in the current action
+    // r: Multiplier based on the game mode
+
+    function increaseScore(p, q, r) {
+      // Increase the score based on the provided parameters
+    }
+
 
 ## if statements
 
