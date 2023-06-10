@@ -74,6 +74,62 @@
       console.log(`Area: ${area}`);
       console.log(`Perimeter: ${perimeter}`);
     }
+    
+    // Example 1: Bad - Unused Variables
+
+    function calculateArea(width, height) {
+      const area = width * height;
+      const perimeter = 2 * (width + height);
+      const unusedVariable = "This variable is not used";
+
+      return area;
+    }
+
+
+    // Example 1: Good - Removing Unused Variables
+
+    function calculateArea(width, height) {
+      const area = width * height;
+      const perimeter = 2 * (width + height);
+
+      return area;
+    }
+
+
+    // Example 2: Bad - Unused Variables
+
+    const name = "John Doe";
+    const age = 25;
+    const unusedVariable1 = "This variable is not used";
+    const unusedVariable2 = "This variable is not used either";
+
+    console.log(name, age);
+
+
+    // Example 2: Good - Removing Unused Variables
+
+    const name = "John Doe";
+    const age = 25;
+
+    console.log(name, age);
+
+
+    // Example 3: Bad - Unused Variables
+
+    const x = 10;
+    const y = 20;
+    const z = 30;
+
+    console.log(x + y);
+
+
+    // Example 3: Good - Removing Unused Variables
+
+    const x = 10;
+    const y = 20;
+
+    console.log(x + y);
+
 
 
 ## function naming
